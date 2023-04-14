@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataGridLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Columns>
+    <Column>
+      <Name>StepNumber</Name>
+      <Width>60</Width>
+      <DisplayOrder>1</DisplayOrder>
+      <HeaderText>Step</HeaderText>
+      <HeaderAlignment>Left</HeaderAlignment>
+      <CellAlignment>Center</CellAlignment>
+      <CellFormat />
+      <CellStyle>Text</CellStyle>
+    </Column>
+    <Column>
+      <Name>StepCode</Name>
+      <Width>72</Width>
+      <DisplayOrder>2</DisplayOrder>
+      <HeaderText>Code</HeaderText>
+      <HeaderAlignment>Left</HeaderAlignment>
+      <CellAlignment>Left</CellAlignment>
+      <CellFormat />
+      <CellStyle>Text</CellStyle>
+    </Column>
+    <Column>
+      <Name>StepDescription</Name>
+      <Width>150</Width>
+      <DisplayOrder>3</DisplayOrder>
+      <HeaderText>Description</HeaderText>
+      <HeaderAlignment>Left</HeaderAlignment>
+      <CellAlignment>Left</CellAlignment>
+      <CellFormat />
+      <CellStyle>Text</CellStyle>
+    </Column>
+    <Column>
+      <Name>Amount</Name>
+      <Width>72</Width>
+      <DisplayOrder>4</DisplayOrder>
+      <HeaderText>Amount</HeaderText>
+      <HeaderAlignment>Center</HeaderAlignment>
+      <CellAlignment>Center</CellAlignment>
+      <CellFormat />
+      <CellStyle>Text</CellStyle>
+    </Column>
+    <Column>
+      <Name>UnitCode</Name>
+      <Width>72</Width>
+      <DisplayOrder>5</DisplayOrder>
+      <HeaderText>Units</HeaderText>
+      <HeaderAlignment>Center</HeaderAlignment>
+      <CellAlignment>Center</CellAlignment>
+      <CellStyle>Text</CellStyle>
+    </Column>
+    <Column>
+      <Name>Grams</Name>
+      <Width>64</Width>
+      <DisplayOrder>6</DisplayOrder>
+      <HeaderAlignment>Center</HeaderAlignment>
+      <CellAlignment>Left</CellAlignment>
+      <CellStyle>Text</CellStyle>
+    </Column>
+    <Column>
+      <Name>Pounds</Name>
+      <Width>64</Width>
+      <DisplayOrder>7</DisplayOrder>
+      <HeaderAlignment>Center</HeaderAlignment>
+      <CellAlignment>Left</CellAlignment>
+      <CellStyle>Text</CellStyle>
+    </Column>
+    <Column>
+      <Name>DispenseGrams</Name>
+      <Width>64</Width>
+      <DisplayOrder>8</DisplayOrder>
+      <HeaderText>Dispense Grams</HeaderText>
+      <HeaderAlignment>Center</HeaderAlignment>
+      <CellAlignment>Center</CellAlignment>
+      <CellFormat>#0.000</CellFormat>
+      <CellStyle>Number</CellStyle>
+    </Column>
+    <Column>
+      <Name>DispensePounds</Name>
+      <Width>90</Width>
+      <DisplayOrder>9</DisplayOrder>
+      <HeaderText>DispensePounds</HeaderText>
+      <HeaderAlignment>Center</HeaderAlignment>
+      <CellAlignment>Left</CellAlignment>
+      <CellFormat />
+      <CellStyle>Text</CellStyle>
+    </Column>
+  </Columns>
+  <LockLayout>false</LockLayout>
+  <LockSort>false</LockSort>
+  <LockFilter>false</LockFilter>
+</DataGridLayout>

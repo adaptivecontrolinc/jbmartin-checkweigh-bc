@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BalanceSerial xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Scale 2</Name>
+  <Connection>COM4,9600,N,8,1</Connection>
+  <DataString>l</DataString>
+  <DataLength>6</DataLength>
+  <WeightUnits>Kilograms</WeightUnits>
+  <DisplayUnits>Kilograms</DisplayUnits>
+  <DisplayFormat>0.000</DisplayFormat>
+  <MinGrams>0</MinGrams>
+  <MaxGrams>50000</MaxGrams>
+  <TareGrams>0</TareGrams>
+  <Tolerance>0.01</Tolerance>   
+  <ToleranceMinGrams>0</ToleranceMinGrams>   
+  <ToleranceMaxGrams>2000</ToleranceMaxGrams> 
+</BalanceSerial>

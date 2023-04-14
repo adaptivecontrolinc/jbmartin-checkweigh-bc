@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DemoMode>false</DemoMode>
+  <DisplayUnits>Imperial</DisplayUnits>
+  <DisableSelectButton>false</DisableSelectButton>
+  <DisableRefreshButton>false</DisableRefreshButton>
+  <ShowGridButton>true</ShowGridButton>
+  <ShowSettingsButton>true</ShowSettingsButton>
+  <ShowBalanceButton>true</ShowBalanceButton>
+  <ShowAboutButton>true</ShowAboutButton>
+  <ShowExitButton>false</ShowExitButton>
+  <ButtonPreWeighEnable>false</ButtonPreWeighEnable>
+  <ButtonNewContainerEnable>true</ButtonNewContainerEnable>
+  <ButtonSkipProductEnable>true</ButtonSkipProductEnable>
+  <ButtonLotNumberEnable>true</ButtonLotNumberEnable>
+  <ButtonNoBarcodeEnable>true</ButtonNoBarcodeEnable>
+  <SkipScanUser>true</SkipScanUser>
+  <SkipScanCode>true</SkipScanCode>
+  <SkipScanLotNumber>true</SkipScanLotNumber>
+  <PrintStepTicket>false</PrintStepTicket>
+  <PrintProductTicket>false</PrintProductTicket>
+  <BarcodeFontName>Free 3 of 9</BarcodeFontName>
+  <BarcodeFontSize>32</BarcodeFontSize>
+  <ScheduledOnly>false</ScheduledOnly>
+  <DyesOnly>true</DyesOnly>
+  <ChemsOnly>false</ChemsOnly>
+  <PowderOnly>false</PowderOnly>
+  <CheckWeighEnableOnly>false</CheckWeighEnableOnly>
+  <ExcludeWeighed>true</ExcludeWeighed>
+  <SqlConnection>Data Source=Adaptive-Server;Initial Catalog=BatchDyeingCentral;User ID=Adaptive;Password=Control</SqlConnection>
+  <SqlSelectBatches>SELECT ID, Dyelot, Redye, StartTime, EndTime, Machine, Blocked, Color FROM Dyelots WITH (NOLOCK) %WHERE and Machine like 'MDJ%' ORDER BY StartTime</SqlSelectBatches>
+  <SqlSelectBatchSteps>SELECT *, (Grams / 1000) AS Kilograms, (DispenseGrams / 1000) AS DispenseKilograms FROM DyelotsBulkedRecipe %WHERE ORDER BY StepNumber,Grams</SqlSelectBatchSteps>
+  <SqlSelectWeighSteps>SELECT *, (Grams / 1000) AS Kilograms, (DispenseGrams / 1000) AS DispenseKilograms FROM DyelotsBulkedRecipe %WHERE ORDER BY StepNumber,Grams</SqlSelectWeighSteps>
+</Settings>

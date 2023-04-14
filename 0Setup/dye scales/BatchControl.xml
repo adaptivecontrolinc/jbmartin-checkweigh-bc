@@ -1,0 +1,14 @@
+<root>
+  <Options>
+    <AutoRunRatePercent>30</AutoRunRatePercent>
+    <Width>1024</Width>
+    <Height>768</Height>
+    <SequencerOptions>
+      <ControlSystems>
+        <ControlSystem>
+          <Code>CheckWeigh</Code>
+        </ControlSystem>
+      </ControlSystems>
+    </SequencerOptions>
+  </Options>
+</root>

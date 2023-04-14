@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BalanceSerial xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Grams</Name>
+  <Connection>COM1,9600,N,8,1</Connection>
+<DataString>L</DataString>
+<DataLength>4</DataLength>
+  <WeightUnits>Pounds</WeightUnits>
+  <DisplayUnits>Pounds</DisplayUnits>
+  <DisplayFormat>0.00</DisplayFormat>
+  <MinGrams>0</MinGrams>
+  <MaxGrams>50000</MaxGrams>
+  <TareGrams>1</TareGrams>
+  <Tolerance>0.10</Tolerance>   
+  <ToleranceMinGrams>1</ToleranceMinGrams>   
+  <ToleranceMaxGrams>1000</ToleranceMaxGrams> 
+</BalanceSerial>

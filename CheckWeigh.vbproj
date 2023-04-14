@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A3A18CB-F160-4DC1-A4AE-24E449BAEF1C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CheckWeigh</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>
+    </RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Source\0Common\User.vb" />
+    <Compile Include="Source\CheckWeigh\CheckManager.vb" />
+    <Compile Include="Source\0Common\Defaults.vb" />
+    <Compile Include="Source\Utilities\Utilities.UserXml.vb" />
+    <Compile Include="Source\Commands\CW.vb" />
+    <Compile Include="Source\User Interface\0Common\Base\BaseControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Base\BaseControl2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Base\BaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Base\BaseFormPopup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\0Common\Flasher.vb" />
+    <Compile Include="Source\0Common\Timer.vb" />
+    <Compile Include="Source\0Common\TimerUp.vb" />
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Customize\DataColumnProperties\DataColumnProperties.Data.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Customize\DataColumnProperties\DataColumnProperties.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Customize\DataColumnProperties\FormDataColumnProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Customize\DataGridCustomize.Events.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Customize\DataGridCustomize.Layout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Customize\DataGridCustomize.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Customize\DataGridCustomizeData.vb" />
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Customize\DataGridCustomizePanels.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Customize\FormDataGridCustomize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Main\DataGridX.AddColumns.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Main\DataGridX.Events.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Main\DataGridX.Search.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Main\DataGridX.Setup.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Main\DataGridX.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Main\DataGridX.XColumnCheckBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Main\DataGridX.XColumnColor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Main\DataGridX.XColumnRecipeStepImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Layout\DataGridLayout.vb" />
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Layout\DataGridLayoutConverter.vb" />
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Layout\DataGridLayoutFormatter.vb" />
+    <Compile Include="Source\User Interface\0Common\Controls\DataGridX\Layout\DataGridLayoutManager.vb" />
+    <Compile Include="Source\User Interface\0Common\Controls\Other\ImageLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\Other\LabelColorBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\Other\LabelComboBoxTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\Other\LabelDateTimePicker.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\Other\LabelListBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\SqlControls\ISqlControl.vb" />
+    <Compile Include="Source\User Interface\0Common\Controls\SqlControls\SqlAutoFill.vb" />
+    <Compile Include="Source\User Interface\0Common\Controls\SqlControls\SqlCheckBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\SqlControls\SqlColorBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\SqlControls\SqlComboBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\SqlControls\SqlDateBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\SqlControls\SqlDatePicker.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\SqlControls\SqlTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\SqlControls\SqlTextBoxOld.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormTest\FormTest.Designer.vb">
+      <DependentUpon>FormTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormTest\FormTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormTest\UserControlTest.Designer.vb">
+      <DependentUpon>UserControlTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormTest\UserControlTest.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\CheckWeigh\0New\Balance\BalanceBase.vb" />
+    <Compile Include="Source\CheckWeigh\0New\Balance\Forms\BalanceControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\CheckWeigh\0New\Balance\BalanceDemo.vb" />
+    <Compile Include="Source\CheckWeigh\0New\Balance\BalanceTcp.vb" />
+    <Compile Include="Source\CheckWeigh\0New\Balance\BalanceSerial.vb" />
+    <Compile Include="Source\CheckWeigh\0New\Balance\BalanceXml.vb" />
+    <Compile Include="Source\CheckWeigh\0New\Balance\Forms\FormBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormMain\BatchList\Buttons\BatchButtons.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormMain\BatchList\ControlBatches.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormMain\FormMain.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormMessage\FormMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormShutdown.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormWeigh\Progress\WeighProgressBars.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormWeigh\Progress\WeighProgressText.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\SettingsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormMain\BatchStepList\Buttons\StepButtons.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormMain\BatchStepList\List\StepList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormMain\BatchStepList\List\StepListData.vb" />
+    <Compile Include="Source\User Interface\Forms\FormMain\BatchList\List\BatchList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormMain\BatchList\List\BatchListData.vb" />
+    <Compile Include="Source\0Common\Enums.vb" />
+    <Compile Include="Source\CheckWeigh\0New\Globals\Images.vb" />
+    <Compile Include="Source\User Interface\0Common\Controls\NumberPad\NumberPadButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\NumberPad\FormNumberPad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\NumberPad\NumberPad.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormMain\BatchStepList\ControlSteps.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormWeigh\WeighNew\FormWeighNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormWeigh\Print\PrintProduct.vb" />
+    <Compile Include="Source\User Interface\Forms\FormWeigh\Print\PrintStep.vb" />
+    <Compile Include="Source\CheckWeigh\0New\Weigh\Weigh.vb" />
+    <Compile Include="Source\User Interface\Forms\FormWeigh\Buttons\WeighButtons.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormWeigh\Instructions\WeighInstructions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\CheckWeigh\0New\Weigh\WeighItem.vb" />
+    <Compile Include="Source\User Interface\Forms\FormWeigh\Progress\WeighProgress.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\0Common\Constants.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\ControlTextBox.Designer.vb">
+      <DependentUpon>ControlTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\0Common\Controls\ControlTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormNewContainer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormWeigh\FormNewDyeDrop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormWeigh\FormWeigh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\Products\ProductClass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\Products\ProductCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\Progress\ProgressBars.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\Progress\ProgressText.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\User Interface\Forms\FormSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\CheckWeigh\0New\Settings\Settings.vb" />
+    <Compile Include="Source\CheckWeigh\0New\Settings\SettingsXml.vb" />
+    <Compile Include="Source\Utilities\Utilities.Conversions.vb" />
+    <Compile Include="Source\Utilities\Utilities.Draw.vb" />
+    <Compile Include="Source\Utilities\Utilities.Email.vb" />
+    <Compile Include="Source\Utilities\Utilities.File.vb" />
+    <Compile Include="Source\Utilities\Utilities.Forms.vb" />
+    <Compile Include="Source\Utilities\Utilities.Log.vb" />
+    <Compile Include="Source\Utilities\Utilities.OleDb.vb" />
+    <Compile Include="Source\Utilities\Utilities.Text.vb" />
+    <Compile Include="Source\Utilities\Utilities.Translations.vb" />
+    <Compile Include="Source\Utilities\Utilities.Weight.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Source\Utilities\Utilities.SerialPort.vb" />
+    <Compile Include="Source\Utilities\Utilities.Sql.vb" />
+    <Compile Include="Source\ControlCode\Alarms.vb" />
+    <Compile Include="Source\ControlCode\ControlCode.Customize.vb" />
+    <Compile Include="Source\ControlCode\ControlCode.vb" />
+    <Compile Include="Source\ControlCode\Parameters.vb" />
+    <Compile Include="Source\IO\IO.vb" />
+    <Compile Include="Source\System\Control.vb" />
+    <Compile Include="Source\System\Modbus.vb" />
+    <Compile Include="Source\System\Omron.vb" />
+    <Compile Include="Source\System\Ports.vb" />
+    <Compile Include="Source\System\Support.vb" />
+    <None Include="Resources\Settings24x24.png" />
+    <None Include="Resources\Settings32x32.png" />
+    <None Include="Resources\Settings16x16.png" />
+    <None Include="Resources\ArrowLeft24x24.png" />
+    <None Include="Resources\Gear24x24.png" />
+    <None Include="Resources\Refresh24x24.png" />
+    <None Include="Resources\Info24x24.png" />
+    <None Include="Resources\ScaleProperties24x24.png" />
+    <None Include="Resources\ScaleProperties32x32.png" />
+    <None Include="Resources\TableProperties24x24.png" />
+    <None Include="Resources\TableProperties32x32.png" />
+    <None Include="Resources\ArrowRight24x24.png" />
+    <None Include="Resources\ArrowRight16x16.png" />
+    <None Include="Resources\Weigh.ico" />
+    <None Include="Resources\Scale.ico" />
+    <None Include="Resources\ScaleEmpty16x16.png" />
+    <None Include="Resources\Scale32x32.png" />
+    <None Include="Resources\Scale24x24.png" />
+    <None Include="Resources\Scale16x16.png" />
+    <None Include="Resources\ArrowLeft16x16.png" />
+    <None Include="Resources\ReturnBlue48x48.png" />
+    <None Include="Resources\ReturnBlue32x32.png" />
+    <None Include="Resources\ReturnBlue24x24.png" />
+    <None Include="Resources\ReturnBlue16x16.png" />
+    <None Include="Resources\Undo16x16.png" />
+    <None Include="Resources\TreatmentsGreenBlue32x32.png" />
+    <None Include="Resources\TreatmentsGreenBlue24x24.png" />
+    <None Include="Resources\TreatmentsGreenBlue16x16.png" />
+    <None Include="Resources\Treatments48x48.png" />
+    <None Include="Resources\Treatments32x32.png" />
+    <None Include="Resources\Treatments24x24.png" />
+    <None Include="Resources\Treatments16x16.png" />
+    <None Include="Resources\Tools16x16.png" />
+    <None Include="Resources\Suppliers32x32.png" />
+    <None Include="Resources\Suppliers24x24.png" />
+    <None Include="Resources\Suppliers16x16.png" />
+    <None Include="Resources\Substrates48x48.png" />
+    <None Include="Resources\Substrates32x32.png" />
+    <None Include="Resources\Substrates24x24.png" />
+    <None Include="Resources\Substrates16x16.png" />
+    <None Include="Resources\Styles48x48.png" />
+    <None Include="Resources\Styles32x32.png" />
+    <None Include="Resources\Styles24x24.png" />
+    <None Include="Resources\Styles16x16.png" />
+    <None Include="Resources\Search16x16.png" />
+    <None Include="Resources\Save16x16.png" />
+    <None Include="Resources\RowInsert16x16.png" />
+    <None Include="Resources\RowDelete16x16.png" />
+    <None Include="Resources\Replace16x16.png" />
+    <None Include="Resources\Refresh16x16.png" />
+    <None Include="Resources\Redo16x16.png" />
+    <None Include="Resources\Recipes48x48.png" />
+    <None Include="Resources\Recipes32x32.png" />
+    <None Include="Resources\Recipes24x24.png" />
+    <None Include="Resources\Recipes16x16.png" />
+    <None Include="Resources\RecipeBook32x32.png" />
+    <None Include="Resources\RecipeBook24x24.png" />
+    <None Include="Resources\RecipeBook16x16.png" />
+    <None Include="Resources\RangeSetup16x16.png" />
+    <None Include="Resources\PrintPreview16x16.png" />
+    <None Include="Resources\PrintList16x16.png" />
+    <None Include="Resources\Print16x16.png" />
+    <None Include="Resources\picture_color.png" />
+    <None Include="Resources\Palette48x48.png" />
+    <None Include="Resources\Palette32x32.png" />
+    <None Include="Resources\Palette24x24.png" />
+    <None Include="Resources\Palette16x16.png" />
+    <None Include="Resources\Paint48x48.png" />
+    <None Include="Resources\Paint32x32.png" />
+    <None Include="Resources\Paint24x24.png" />
+    <None Include="Resources\Paint16x16.png" />
+    <None Include="Resources\OpenFolder16x16.png" />
+    <None Include="Resources\Oil48x48.png" />
+    <None Include="Resources\Oil32x32.png" />
+    <None Include="Resources\Oil24x24.png" />
+    <None Include="Resources\Oil16x16.png" />
+    <None Include="Resources\NewDocumentText16x16.png" />
+    <None Include="Resources\NewDocument16x16.png" />
+    <None Include="Resources\MessagesWhite48x48.png" />
+    <None Include="Resources\MessagesWhite32x32.png" />
+    <None Include="Resources\MessagesWhite24x24.png" />
+    <None Include="Resources\MessagesWhite16x16.png" />
+    <None Include="Resources\List48x48.png" />
+    <None Include="Resources\List32x32.png" />
+    <None Include="Resources\List24x24.png" />
+    <None Include="Resources\List16x16.png" />
+    <None Include="Resources\Inventory32x32.png" />
+    <None Include="Resources\Inventory24x24.png" />
+    <None Include="Resources\Inventory16x16.png" />
+    <None Include="Resources\Instructions48x48.png" />
+    <None Include="Resources\Instructions32x32.png" />
+    <None Include="Resources\Instructions24x24.png" />
+    <None Include="Resources\Instructions16x16.png" />
+    <None Include="Resources\FilterDelete16x16.png" />
+    <None Include="Resources\Filter16x16.png" />
+    <None Include="Resources\Dyes48x48.png" />
+    <None Include="Resources\Dyes32x32.png" />
+    <None Include="Resources\Dyes24x24.png" />
+    <None Include="Resources\Dyes16x16.png" />
+    <None Include="Resources\Dyelots48x48.png" />
+    <None Include="Resources\Dyelots32x32.png" />
+    <None Include="Resources\Dyelots24x24.png" />
+    <None Include="Resources\Dyelots16x16.png" />
+    <None Include="Resources\Dropper16x16.png" />
+    <None Include="Resources\DocumentFlatRead16x16.png" />
+    <None Include="Resources\DocumentFlatEdit16x16.png" />
+    <None Include="Resources\DispenseSchedule16x16.png" />
+    <None Include="Resources\DispenserNew16x16.png" />
+    <None Include="Resources\DispenseAdd16x16.png" />
+    <None Include="Resources\Delete16x16.png" />
+    <None Include="Resources\DatabaseImport16x16.png" />
+    <None Include="Resources\DatabaseExport16x16.png" />
+    <None Include="Resources\Database16x16.png" />
+    <None Include="Resources\CustomizeView16x16.png" />
+    <None Include="Resources\Customers32x32.png" />
+    <None Include="Resources\Customers24x24.png" />
+    <None Include="Resources\Customers16x16.png" />
+    <None Include="Resources\Contacts32x32.png" />
+    <None Include="Resources\Contacts24x24.png" />
+    <None Include="Resources\Contacts16x16.png" />
+    <None Include="Resources\Compare16x16.png" />
+    <None Include="Resources\Colors48x48.png" />
+    <None Include="Resources\Colors32x32.png" />
+    <None Include="Resources\Colors24x24.png" />
+    <None Include="Resources\Colors16x16.png" />
+    <None Include="Resources\Cloth48x48.png" />
+    <None Include="Resources\Cloth32x32.png" />
+    <None Include="Resources\Cloth24x24.png" />
+    <None Include="Resources\Cloth16x16.png" />
+    <None Include="Resources\Close32x32.png" />
+    <None Include="Resources\Close16x16.png" />
+    <None Include="Resources\ChooseColor16x16.png" />
+    <None Include="Resources\Chemicals48x48.png" />
+    <None Include="Resources\Chemicals32x32.png" />
+    <None Include="Resources\Chemicals24x24.png" />
+    <None Include="Resources\Chemicals16x16.png" />
+    <None Include="Resources\CancelCircle16x16.png" />
+    <None Include="Resources\Cancel16x16.png" />
+    <None Include="Resources\Calculator16x16.png" />
+    <None Include="Resources\ButtonPrevious16x16.png" />
+    <None Include="Resources\ButtonNext16x16.png" />
+    <None Include="Resources\Adjustment16x16.png" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Source\User Interface\Forms\FormTest\FormTest.resx">
+      <DependentUpon>FormTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Forms\FormTest\UserControlTest.resx">
+      <DependentUpon>UserControlTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\0Common\Controls\ControlTextBox.resx">
+      <DependentUpon>ControlTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Forms\FormNewContainer.resx">
+      <DependentUpon>FormNewContainer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Forms\FormWeigh\FormNewDyeDrop.resx">
+      <DependentUpon>FormNewDyeDrop.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Forms\FormSplash.resx">
+      <DependentUpon>FormSplash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Forms\FormWeigh\FormWeigh.resx">
+      <DependentUpon>FormWeigh.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Forms\Progress\ProgressBars.resx">
+      <DependentUpon>ProgressBars.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\User Interface\Forms\Progress\ProgressText.resx">
+      <DependentUpon>ProgressText.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Source\ControlCode\ControlCode.Variables.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Source\Utilities\Old\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
